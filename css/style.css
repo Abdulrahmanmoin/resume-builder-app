@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+header h1 {
+    margin-left: 5em;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header button {
+    margin-right: 11em;
+    padding: 0.9em 1em;
+    height: 3em;
+    border-radius: 12px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        margin-left: 2em;
+    }
+
+    header button {
+        margin-right: 7em;
+        padding: 1.1em;
+        height: 3.3em;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    header h1 {
+        margin-left: 0.1em;
+        font-size: 1.1em;
+    }
+
+    header button {
+        font-size: 0.7em;
+        margin-right: 0.8em;
+        padding: 0.7em;
+        height: 2.7em;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 297px) and (max-width: 425px) {
+    header h1 {
+        margin-left: 0.1em;
+        font-size: 1.1em;
+    }
+
+    header button {
+        font-size: 0.6em;
+        margin-right: 0.8em;
+        padding: 0.7em;
+        height: 2.7em;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 297px) {
+    header h1 {
+        margin-left: 0.1em;
+        font-size: 0.69em;
+    }
+
+    header button {
+        font-size: 0.47em;
+        margin-right: 0.8em;
+        padding: 0.7em;
+        height: 2.7em;
+        border-radius: 6px;
+    }
+}
