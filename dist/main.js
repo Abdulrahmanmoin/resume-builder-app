@@ -20,10 +20,24 @@ const generateBtn = document.querySelector(".generate-btn");
 form.style.display = "none";
 genResumeHeading.style.display = "none";
 headerBtn.addEventListener("click", (event) => {
-    resumeSec.style.display = "none";
-    form.style.display = "block";
-    genResumeHeading.style.display = "block";
-    headerBtn.style.display = "none";
+    if (headerBtn.textContent == "CLICK ME TO MAKE RESUME") {
+        resumeSec.style.display = "none";
+        form.style.display = "block";
+        genResumeHeading.style.display = "block";
+        headerBtn.textContent = "<-- Return";
+    }
+    else if (headerBtn.textContent == "<-- Return") {
+        resumeSec.style.display = "block";
+        form.style.display = "none";
+        genResumeHeading.style.display = "none";
+        headerBtn.textContent = "CLICK ME TO MAKE RESUME";
+        nameField.value = "";
+        phoneNumField.value = "";
+        designationField.value = "";
+        skillsField.value = "";
+        educationField.value = "";
+        experienceField.value = "";
+    }
 });
 generateBtn.addEventListener("click", (e) => {
     if (!form.checkValidity()) {
@@ -34,7 +48,7 @@ generateBtn.addEventListener("click", (e) => {
     form.style.display = "none";
     genResumeHeading.style.display = "none";
     resumeSec.style.display = "block";
-    headerBtn.style.display = "block";
+    // headerBtn.style.display = "block";
     headerBtn.textContent = "Edit your resume";
     nameResume.textContent = nameField.value;
     phoneNumResume.textContent = phoneNumField.value;

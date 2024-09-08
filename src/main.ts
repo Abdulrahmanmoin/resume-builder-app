@@ -24,22 +24,36 @@ form.style.display = "none"
 genResumeHeading.style.display = "none"
 
 headerBtn.addEventListener("click", (event: MouseEvent): void => {
-    resumeSec.style.display = "none"
-    form.style.display = "block"
-    genResumeHeading.style.display = "block"
+    if (headerBtn.textContent == "CLICK ME TO MAKE RESUME") {
+        resumeSec.style.display = "none"
+        form.style.display = "block"
+        genResumeHeading.style.display = "block"
 
 
-    headerBtn.style.display = "none";
+        headerBtn.textContent = "<-- Return";
 
+    }
+    else if(headerBtn.textContent == "<-- Return") {
+        resumeSec.style.display = "block"
+        form.style.display = "none"
+        genResumeHeading.style.display = "none"
 
+        headerBtn.textContent = "CLICK ME TO MAKE RESUME";
 
+        nameField.value  = "";
+        phoneNumField.value = "";
+        designationField.value = ""
+        skillsField.value = "";
+        educationField.value = "";
+        experienceField.value = "";
+
+    }
 })
-
 
 generateBtn.addEventListener("click", (e: MouseEvent): void => {
 
     if (!form.checkValidity()) {
-        
+
         form.reportValidity();
         return
     }
@@ -51,7 +65,7 @@ generateBtn.addEventListener("click", (e: MouseEvent): void => {
 
     resumeSec.style.display = "block"
 
-    headerBtn.style.display = "block";
+    // headerBtn.style.display = "block";
     headerBtn.textContent = "Edit your resume";
 
 
