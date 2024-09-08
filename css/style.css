@@ -222,6 +222,19 @@ input{
         gap: 2rem;
         justify-content: center;
     }
+
+    .generate-btn{
+        background-color: rgb(151, 150, 150);
+        border-radius: 15px;
+        border: 2px solid black;
+        color: black;
+        width: 18vw;
+        height: 8vh;
+        font-family:monospace;
+        letter-spacing: 0.4px;
+        font-weight: 600;
+        margin-top: 1.5rem;
+    }
 }
 
 @media (min-width: 297px) and (max-width: 425px) {
@@ -285,6 +298,19 @@ input{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    .generate-btn{
+        background-color: rgb(151, 150, 150);
+        border-radius: 15px;
+        border: 2px solid black;
+        color: black;
+        width: 25vw;
+        height: 8vh;
+        font-family:monospace;
+        letter-spacing: 0.4px;
+        font-weight: 600;
+        margin-top: 1.5rem;
+    }
+
 }
 
 @media (max-width: 297px) {
@@ -343,5 +369,18 @@ input{
         font-size: 1.1rem;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .generate-btn{
+        background-color: rgb(151, 150, 150);
+        border-radius: 15px;
+        border: 2px solid black;
+        color: black;
+        width: 30vw;
+        height: 8vh;
+        font-family:monospace;
+        letter-spacing: 0.4px;
+        font-weight: 600;
+        margin-top: 1.5rem;
     }
 }
