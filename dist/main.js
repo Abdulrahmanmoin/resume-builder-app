@@ -26,17 +26,24 @@ headerBtn.addEventListener("click", (event) => {
         genResumeHeading.style.display = "block";
         headerBtn.textContent = "<-- Return";
     }
-    else if (headerBtn.textContent == "<-- Return") {
+    else if (headerBtn.textContent == "<-- Return" || headerBtn.textContent == "Return") {
         resumeSec.style.display = "block";
         form.style.display = "none";
         genResumeHeading.style.display = "none";
-        headerBtn.textContent = "CLICK ME TO MAKE RESUME";
         nameField.value = "";
         phoneNumField.value = "";
         designationField.value = "";
         skillsField.value = "";
         educationField.value = "";
         experienceField.value = "";
+        headerBtn.textContent == "Return" ? headerBtn.textContent = "Edit your resume" : headerBtn.textContent = "CLICK ME TO MAKE RESUME";
+    }
+    else {
+        resumeSec.style.display = "none";
+        form.style.display = "block";
+        genResumeHeading.style.display = "block";
+        generateBtn.textContent = "Save changes";
+        headerBtn.textContent = "Return";
     }
 });
 generateBtn.addEventListener("click", (e) => {
