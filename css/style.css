@@ -122,6 +122,10 @@ main {
     margin-top: 5rem;
 }
 
+.name-deignation-group{
+    margin-top: 3rem;
+}
+
 input{
     width: 40vw;
     height: 5vh;
@@ -145,7 +149,22 @@ input{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.generate-btn-div{
+    text-align: center;
+}
 
+.generate-btn{
+    background-color: rgb(151, 150, 150);
+    border-radius: 15px;
+    border: 2px solid black;
+    color: black;
+    width: 10vw;
+    height: 8vh;
+    font-family:monospace;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     header h1 {

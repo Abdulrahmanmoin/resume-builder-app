@@ -17,28 +17,28 @@
     <main>
         <section class="resume">
             <section class="upper-resume-box">
-                <h3>Abdul Rahman Moin</h3>
-                <h5>Website Developer</h5>
+                <h3 class="name-resume">Abdul Rahman Moin</h3>
+                <h5 class="designation-resume">Website Developer</h5>
             </section>
 
             <div class="contact">
                 <h3>CONTACT DEATAILS</h3>
-                <p>+92 12345678910</p>
+                <p class="phone-num-resume">+92 12345678910</p>
             </div>
 
             <div class="education">
                 <h3>EDUCATION</h3>
-                <p>Matric</p>
+                <p class="edu-resume">Matric</p>
             </div>
 
             <div class="skills">
                 <h3>SKILLS</h3>
-                <p>MERN Stack</p>
+                <p class="skill-resume">MERN Stack</p>
             </div>
 
             <div class="work-experience">
                 <h3>WORK EXPERIENCE</h3>
-                <p>1 Year</p>
+                <p class="experience-resume">1 Year</p>
             </div>
         </section>
         <div class="form">
@@ -46,19 +46,23 @@
                 GENERATE YOUR RESUME:
             </h2>
             <form action="" display="none">
-                <div class="d-flex">
-                    <input class="name-field" type="text" placeholder="Enter your name">
-                    <input class="designation-field" type="text" placeholder="Enter your designation">
+                <div class="d-flex name-deignation-group">
+                    <input class="name-field"  type="text" placeholder="Enter your name" required >
+                    <input class="designation-field"  type="text" placeholder="Enter your designation" required >
                 </div>
                 <div class="d-flex">
-                    <input class="phone-num-field" type="number" placeholder="Enter your phone number">
-                    <input class="education-field" type="text" placeholder="Enter your education">
+                    <input class="phone-num-field"  type="number" placeholder="Enter your phone number" required >  
+                    <input class="education-field"  type="text" placeholder="Enter your education" required >
                 </div>
                 <div class="d-flex">
-                    <input class="skills-field" type="text" placeholder="Enter your skills">
-                    <input class="experience-field" type="text" placeholder="Enter your work experience">
+                    <input class="skills-field"  type="text" placeholder="Enter your skills" required >
+                    <input class="experience-field"  type="text" placeholder="Enter your work experience" required >
                 </div>
+                <div class="generate-btn-div">
+                <button  class="generate-btn">GENERATE</button>
+            </div>
             </form>
+
         </div>
     </main>
 
