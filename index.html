@@ -11,11 +11,11 @@
 <body>
     <header>
         <h1>RESUME BUILDER</h1>
-        <button>CLICK ME TO MAKE RESUME</button>
+        <button class="header-btn">CLICK ME TO MAKE RESUME</button>
     </header>
 
     <main>
-        <div class="resume">
+        <section class="resume">
             <section class="upper-resume-box">
                 <h3>Abdul Rahman Moin</h3>
                 <h5>Website Developer</h5>
@@ -40,10 +40,30 @@
                 <h3>WORK EXPERIENCE</h3>
                 <p>1 Year</p>
             </div>
-            <!-- <section class="bottom-resume-box"></section> -->
+        </section>
+        <div class="form">
+            <h2>
+                GENERATE YOUR RESUME:
+            </h2>
+            <form action="" display="none">
+                <div class="d-flex">
+                    <input class="name-field" type="text" placeholder="Enter your name">
+                    <input class="designation-field" type="text" placeholder="Enter your designation">
+                </div>
+                <div class="d-flex">
+                    <input class="phone-num-field" type="number" placeholder="Enter your phone number">
+                    <input class="education-field" type="text" placeholder="Enter your education">
+                </div>
+                <div class="d-flex">
+                    <input class="skills-field" type="text" placeholder="Enter your skills">
+                    <input class="experience-field" type="text" placeholder="Enter your work experience">
+                </div>
+            </form>
         </div>
     </main>
 
+
+    <script src="/dist/main.js" type="module"></script>
 </body>
 
 </html>

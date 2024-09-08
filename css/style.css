@@ -116,6 +116,37 @@ main {
     /* justify-items: baseline; */
 }
 
+.d-flex{
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+input{
+    width: 40vw;
+    height: 5vh;
+    background-color:rgb(151, 150, 150) ;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: black;
+    padding-left: 10px;
+    text-wrap: pretty;
+}
+
+.form h2{
+    color: white;
+    margin-top: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     header h1 {
         margin-left: 2em;
@@ -127,6 +158,12 @@ main {
         height: 3.3em;
         border-radius: 12px;
     }
+
+    .d-flex{
+        gap: 3rem;
+    }
+
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -161,6 +198,11 @@ main {
         display: flex;
         flex-direction: column;
     } 
+
+    .d-flex{
+        gap: 2rem;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 297px) and (max-width: 425px) {
@@ -197,6 +239,33 @@ main {
         display: flex;
         flex-direction: column;
     }
+
+    .d-flex{
+        gap: 0.2rem;
+        justify-content: center;
+    }
+
+    input{
+        width: 45vw;
+        height: 5vh;
+        background-color:rgb(151, 150, 150) ;
+        border: 2px solid black;
+        border-radius: 7.5px;
+        /* padding-left: 2px; */
+    }
+    
+    ::placeholder {
+        padding-left: 2.5px;
+    }
+    
+    .form h2{
+        color: white;
+        margin-top: 15px;
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
 }
 
 @media (max-width: 297px) {
@@ -230,5 +299,30 @@ main {
         margin-top: 2.5vh;
         display: flex;
         flex-direction: column;
+    }
+
+    .d-flex{
+        gap: 0.2rem;
+        justify-content: center;
+    }
+
+    input{
+        width: 40vw;
+        height: 7vh;
+        background-color:rgb(151, 150, 150) ;
+        border: 2px solid black;
+        border-radius: 7.5px;
+    }
+    
+    ::placeholder {
+        padding-left: 2.5px;
+    }
+    
+    .form h2{
+        color: white;
+        margin-top: 15px;
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
